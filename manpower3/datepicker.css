@@ -1,0 +1,237 @@
+div.datepicker {
+    position: relative;
+    font-family: Verdana;
+    font-size: 9px;
+    width: 109px;
+    height: 116px;
+    position: absolute;
+    cursor: default;
+    top: 0;
+    left: 0;
+    display: none;
+}
+/*
+Franchu, estoy en manpower3 desde MODZILLA y veo que la tipografia de las notas esta cambiada...
+me parece que el contenido de las notas esta en un tamaño menor que en los titulos, segun la imagen q ellos mandaron.
+Ademas me da la impresion que las letras del CALENDARIO estan en ARIAL y no en la tipografia que ellos nos mandaron, 
+que es la misma en todo el clipping, puede ser?
+Por las dudas te mando un print de como yo lo veo... si lo comparas con el que ellos mandaron, se ve distinto en cuanto a las letras.
+nuestro clip.jpg
+Ademas, cuando entras a las notas, el articulo completo se ve con un color distinto que la nota que esta al lado (el articulo completo se ve en gris y la nota de al lado, en negro)... 
+Y como te comente antes, el titulo va en negrita y en un tamaño y el resto de la nota en gris y en un tamaño menor. Aca te mando un print
+*/
+.datepickerContainer {
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.busqueda_title{
+    font-size:10px;
+    font-weight: bold;
+    color: white;
+    background: #777;
+    width:109px;
+    padding:2px;
+    border-bottom: solid 3px #54A0C9;
+}
+.datepickerBorderT {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    right: 0px;
+    height: 10px;
+    background: url(../images/datepicker_t.png);
+}
+.datepickerBorderB {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    right: 10px;
+    height: 10px;
+    background: url(../images/datepicker_b.png);
+}
+.datepickerBorderL {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    top: 10px;
+    width: 0px;
+    background: url(../images/datepicker_l.png);
+}
+.datepickerBorderR {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    top: 10px;
+    width: 0px;
+    background: url(../images/datepicker_r.png);
+}
+.datepickerBorderTL {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 10px;
+    background: url(../images/datepicker_tl.png);
+}
+.datepickerBorderTR {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 10px;
+    background: url(../images/datepicker_tr.png);
+}
+.datepickerBorderBL {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 10px;
+    background: url(../images/datepicker_bl.png);
+}
+.datepickerBorderBR {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 10px;
+    background: url(../images/datepicker_br.png);
+}
+.datepickerHidden {
+    display: none;
+}
+div.datepicker table {
+    border-collapse:collapse;
+}
+div.datepicker a {
+    color: #444;
+    text-decoration: none;
+    cursor: default;
+    outline: none;
+}
+.mes {color: white;}
+div.datepicker table td {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+div.datepicker th {
+    text-align: center;
+    color: #444;
+    font-weight: normal;
+}
+div.datepicker tbody th {
+    text-align: left;
+}
+div.datepicker tbody a {
+    display: block;
+}
+.datepickerDays a {
+    width: 14px;
+    line-height: 16px;
+    height: 14px;
+    padding-right: 2px;
+}
+.datepickerYears a,
+.datepickerMonths a{
+    width: 20px;
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+
+}
+td.datepickerNotInMonth a {
+    color: #777;
+}
+tbody.datepickerDays td.datepickerSelected{
+    background: #ff9900;
+    color: white;
+}
+tbody.datepickerDays td.datepickerNotInMonth.datepickerSelected {
+    background:#ff9900;
+    color: white;
+}
+tbody.datepickerYears td.datepickerSelected,
+tbody.datepickerMonths td.datepickerSelected{
+    background: #cccccc;
+    color: white;
+}
+
+div.datepicker a{
+    font-size:9px;
+}
+div.datepicker a:hover,
+div.datepicker a:hover { 
+    cursor:pointer; 
+    background: #ff9900;
+}
+div.datepicker td.datepickerNotInMonth{
+    color: #444;
+}
+div.datepicker td.datepickerNotInMonth a:hover {
+    color: #444;
+}
+div.datepicker tbody th {
+    text-align: left;
+    font-size:9px;
+}
+.datepickerSpace div {
+    width: 1px;
+}
+
+.datepickerGoPrev {
+    /* background: url('flecha1.png'); */
+}
+.datepickerGoNext a,
+.datepickerGoPrev a,
+.datepickerMonth {
+    font-size:10px;
+     background: url('month.png');  
+     background-repeat: repeat-x;
+    color: #333;
+}
+.datepickerMonth a {
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+}
+.datepickerGoNext a {
+    float: left;
+    width: 10px;
+}
+.datepickerGoPrev a {
+    float: right;
+    width: 10px;
+}
+table.datepickerViewDays tbody.datepickerMonths,
+table.datepickerViewDays tbody.datepickerYears {
+    display: none;
+}
+table.datepickerViewMonths tbody.datepickerDays,
+table.datepickerViewMonths tbody.datepickerYears,
+table.datepickerViewMonths tr.datepickerDoW {
+    display: none;
+}
+table.datepickerViewYears tbody.datepickerDays,
+table.datepickerViewYears tbody.datepickerMonths,
+table.datepickerViewYears tr.datepickerDoW {
+    display: none;
+}
+td.datepickerDisabled a,
+td.datepickerDisabled.datepickerNotInMonth a{
+    color: #888;
+}
+td.datepickerDisabled a:hover {
+    /*color: #333;*/
+    color: #eee;
+    background:none;
+}
+td.datepickerSpecial a {
+    background: #ff9900;
+}
+td.datepickerSpecial.datepickerSelected a {
+    background: #ff9900;
+}

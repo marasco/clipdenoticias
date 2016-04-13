@@ -1,0 +1,11 @@
+input.btn.btn-info.datepicker {  padding: 8px 14px !important; width: 80px!important;}
+.datepicker-days {padding: 3px 12px 8px 13px;}
+.datepicker thead tr:first-child th, .datepicker tfoot tr th {font-size: 21px;line-height: 17px;font-weight: 100;} 
+.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {background: #E74D4B!important;color: #FFF!important;}
+th.datepicker-switch {font-size: 16px!important;font-weight: bold!important;color: #E74D4B;}
+  .datepicker-days, .datepicker-months {padding: 5px 12px;}
+  .datepicker.datepicker-inline {width: 100%;}
+  .datepicker table tr td.today {background-color: #CDCDCD!important; color: #FFF!important}
+  .datepicker table tr td.today.active {background-color: #E74D4B!important; color: #FFF!important}
+  .datepicker thead tr:first-child th:hover, .datepicker tfoot tr th:hover {background: transparent!important;}
+  .datepicker table tr td span:hover {background: #E74D4B!important;color: #FFF!important;}

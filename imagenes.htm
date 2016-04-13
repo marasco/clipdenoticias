@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Imágenes</title>
+<script language="javascript">
+var mov,vel;
+function mover()
+{
+var obj = document.getElementById("div_img");
+//obj.style.top = "0px";
+if (obj!==null)
+	{
+	
+	if (mov==1) { 
+	var strtop = obj.style.top;
+	var pos = parseInt(strtop.indexOf('px'));
+	var tam = strtop.substring(0,pos);
+	strtop = parseInt(tam)-vel + "px";
+	obj.style.top = strtop.toString();
+	var tt = document.getElementById("pepe");
+	tt.value = -obj.offsetHeight + " / " + tam;
+	if (-(obj.offsetHeight)>tam) {obj.style.top = "100px";} ;
+	 }
+	};
+}
+function iniciar()
+{
+var intv;
+playdiv();
+	intv = setInterval("mover()",40);
+}
+function playdiv()
+{
+	mov = 1;
+	vel=1;
+	
+}
+function stopdiv()
+{
+	mov = 0;
+	vel=0;
+//	setTimeout("clearInterval("+intv+")",10);
+}
+</script>
+</head>
+
+<body  onLoad="iniciar()">
+<div align="center" id="container" style="overflow:hidden; height:108px; position:relative; width:190px; background-color:#FFFFFF; border:solid 1px; border-color: #f6f6f6; left:0px">
+   	<div  onMouseOut="playdiv();" onMouseOver="stopdiv();"  id="div_img" style="overflow:visible; left:0px; top:100px; width:190px; height:680px; position:relative; visibility: visible;">
+<table width="190" border="0" align="left" cellpadding="0" cellspacing="0">
+	<tr>
+		<td><img src="/logos/Clarin.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Diario Popular.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/El Cronista.jpg"  /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/El Litoral de Santa Fe.jpg"  /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/El Mercurio de Chile.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Hoy de La Plata.jpg"  /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Infobae.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/La Capital de Mar del Plata.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/La Prensa.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/La Razon.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/La Voz del Interior de Cordoba.jpg"  /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Minuto Uno.jpg"  /></td>
+	</tr><tr><td height='8'></td></tr>
+	
+	<tr>
+		<td><img src="/logos/p12.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Perfil.jpg" /></td>
+	</tr><tr><td height='8'></td></tr>
+	<tr>
+		<td><img src="/logos/Rio Negro.jpg" /></td>
+	</tr>
+</table>
+</div>
+   </div><input id="pepe" type="hidden" />
+</body>
+</html>

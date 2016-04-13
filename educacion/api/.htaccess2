@@ -1,0 +1,5 @@
+AuthName "clipdenoticias:/api/educacion"
+AuthType Basic
+AuthUserFile /www/clipdenoticias.com/htdocs/educacion/api/.htpasswd
+AuthGroupFile /dev/null
+require valid-user

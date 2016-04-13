@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "clipping"
+AuthUserFile /www/clipdenoticias.com/htdocs/sanisidro/.htpasswd
+Require valid-user
