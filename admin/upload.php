@@ -542,8 +542,15 @@ function achicar($tamano, $img_s, $img_save) {
                                                                             <span class="LINKS_MENU">
                                                                                 <select name="fanio" id="fanio"  class="form_4numeros">
                                                                                     <?php 
+                                                                                    $date = date('Y');
+                                                                                    for($i=0;$i<5;$i++):
+                                                                                    ?>
 
-                                                                                    echo "<option selected='selected'>2016</option><option>2015</option>"; ?>
+                                                                                	<option <?php if (!$i){ echo 'selected=selected'; }?>>
+                                                                                	<?=(((int)$date)-$i)?></option> 
+                                                                                	<?php
+                                                                                	endfor;
+                                                                                	?>
                                                                                 </select>
                                                                             </span>  * </td>    
                                                                         </tr>

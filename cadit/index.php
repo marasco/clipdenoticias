@@ -98,36 +98,36 @@ $getema = "&tema=" . $tema;
 
 //Listar noticias de entre begin y end
 
-$desc_tema = array('ANMAT'=>"Disposiciones Anmat",'CADIT'=>"Cadit", 'ministerio'=>'Ministerio de Salud', 'PREPAGAS'=>"Obras sociales y Prepagas",'SECTOR'=>"Noticias del Sector");
+$desc_tema = array('ANMAT'=>"ANMAT",'CADIT'=>"Miembros CADIT", 'ministerio'=>'Alertas', 'SECTOR'=>"Mercado");
 
 
 $db = mysql_connect("192.168.0.192", "mysql_root", "fran21");
 mysql_select_db("clipping", $db);
-if (  !empty($_GET['search'])) {
-    // die("1");
-            $orderx = " FIELD(n.codigo_tema, 'cadit', 'sector', 'ministerio', 'prepagas','anmat'), ";
+    $orderx = " FIELD(n.codigo_tema, 'sector', 'cadit', 'ministerio', 'anmat'), ";
 
+if (  !empty($_GET['search'])) {
+    
     $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link
     from tnotas n, tautores f where 
-    (n.codigo_tema = 'cadit' or n.codigo_tema = 'PREPAGAS' or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigot_tema == 'ANMAT') " . $fecha_inicial_s . " and f.id = n.fuente  and n.estado = 1 and ( n.titulo like '%" . $_GET['search'] . "%' or n.copete like '%" . $_GET['search'] . "%' ) order by $orderx n.region asc, id desc";
+    (n.codigo_tema = 'cadit' or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigot_tema == 'ANMAT') " . $fecha_inicial_s . " and f.id = n.fuente  and n.estado = 1 and ( n.titulo like '%" . $_GET['search'] . "%' or n.copete like '%" . $_GET['search'] . "%' ) order by $orderx n.region asc, id desc";
     $titulo_barra = "Resultados de la b&uacute;squeda";
 } else {
 
     if (($_GET['BuscarFecha'] == "Buscar") && ($_GET['fdia'] != "") && ($_GET['fmes'] != "") && ($_GET['fanio'] != "")) {
-                    $orderx = " FIELD(n.codigo_tema, 'cadit', 'sector', 'ministerio', 'prepagas','anmat'), ";
+                    
         $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link
         from tnotas n, tautores f where 
-        (n.codigo_tema = 'cadit' or n.codigo_tema = 'PREPAGAS'  or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigo_tema = 'ANMAT')  " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota = '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by $orderx  n.region asc,  id desc";
+        (n.codigo_tema = 'cadit' or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigo_tema = 'ANMAT')  " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota = '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by $orderx  n.region asc,  id desc";
         $titulo_barra = "Notas del " . $_GET['fdia'] . "/" . $_GET['fmes'] . "/" . $_GET['fanio'];
        
     } elseif (empty($tema)) {
         $dow = date('D', time());
 
-        $orderx = " FIELD(n.codigo_tema, 'cadit', 'sector', 'ministerio', 'prepagas','anmat'), ";
+        
 
         $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link
         from tnotas n, tautores f where 
-        (n.codigo_tema = 'cadit' or n.codigo_tema = 'PREPAGAS'  or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigo_tema = 'ANMAT') " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 " . $filtro_fecha_hoy . " order by $orderx n.region asc, n.id desc";
+        (n.codigo_tema = 'cadit'  or n.codigo_tema = 'ministerio' or n.codigo_tema = 'SECTOR' or n.codigo_tema = 'ANMAT') " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 " . $filtro_fecha_hoy . " order by $orderx n.region asc, n.id desc";
      }else{
         $dow = date('D', time());
 
@@ -332,12 +332,11 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                                     <div style=""><a href="/cadit/" border="0"><img width="700" src="./logo.jpg?x=8282" border="0" /></a></div>
                                     <div style="padding:10px;">Clipping de Noticias</div>
                                     <div style="float:right">
-                                        <a class="link" href="?tema=CADIT">CADIT</a> <span style="color:#ccc">|</span> 
-                                        <a class="link" href="?tema=SECTOR">Noticias del Sector</a> 
+                                        <a class="link" href="?tema=SECTOR">Mercado</a> 
                                         <span style="color:#ccc">|</span> 
-                                        <a class="link" href="?tema=ministerio">Ministerio de Salud</a> <span style="color:#ccc">|</span> 
-                                        <a class="link" href="?tema=PREPAGAS">Obras sociales y prepagas</a> 
-                                        <span style="color:#ccc">|</span> <a class="link" href="?tema=ANMAT">Disposiciones ANMAT</a></div> </div>
+                                        <a class="link" href="?tema=CADIT">Miembros CADIT</a> <span style="color:#ccc">|</span> 
+                                        <a class="link" href="?tema=ministerio">Alertas</a> <span style="color:#ccc">|</span> 
+                                        <a class="link" href="?tema=ANMAT">ANMAT</a></div> </div>
                                     </td>
                                 </tr>
 <!--

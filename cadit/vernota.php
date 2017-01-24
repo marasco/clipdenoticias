@@ -158,7 +158,7 @@ if ($cant_not < 1)
                             <tr>
                                 <td  colspan="3" align="center" valign="top">
                                     <div style = "background:#FFF; color: #777; font-size:18px; font-family: Helvetica; padding:4px;text-align:left;" >
-                                        <div style="float:left;padding-right: 20px;"><a href="/cadit/" border="0"><img src="./logo.png?x=8282" border="0" /></a></div>
+                                        <div style="float:left;padding-right: 20px;"><a href="/cadit/" border="0"><img src="./logo.jpg?x=8282" border="0" /></a></div>
                                         <div style="float:left; padding:20px;">Clipping de Noticias</div> </div>
                                 </td>
                             </tr>
