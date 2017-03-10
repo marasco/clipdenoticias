@@ -10,7 +10,7 @@
   
     var DatePicker = function () {
         var colorButton; 
-            colorButton = "028974"; 
+            colorButton = "0047a9"; 
         var	ids = {},
         views = {
             years: 'datepickerViewYears',

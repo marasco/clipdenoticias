@@ -88,8 +88,7 @@ if (!empty($_GET['tema'])){
 if ($hojaestilo == "default") {
     $hojaestilo = "";
 } else {
-    $hojaestilo = "";
-//$hojaestilo = "<link rel='stylesheet' href='../estilos/".$hojaestilo."' type='text/css'>";
+    $hojaestilo = "<link rel='stylesheet' href='./nutreco.css' type='text/css'>";
 }
 
 //Paginacion
@@ -344,7 +343,7 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                             <table width="500" style="border:solid 1px; border-color:#fcfcfc" border="0" cellspacing="6" cellpadding="0">
                                 <tr>
 
-                                    <td style="padding:10px;" bgcolor="#028974" class="TITULO_BLANCO"><?php echo $titulo_barra; ?></td>
+                                    <td style="padding:10px;" class="TITULO_BLANCO"><?php echo $titulo_barra; ?></td>
 
                                 </tr>
                                 <?php echo $listado_notas; ?>
@@ -358,7 +357,7 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                         </td>
                         <td width="200" align="left" valign="top"><table width="200" style="border:0px;" border="0" cellspacing="6" cellpadding="0"><? echo $logos; ?>
                             <tr>
-                                <td style="padding:10px;" bgcolor="#028974" class="TITULO_BLANCO">B&uacute;squeda de notas</td>
+                                <td style="padding:10px;" class="TITULO_BLANCO">B&uacute;squeda de notas</td>
                             </tr>
 
                             <tr>

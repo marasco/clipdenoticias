@@ -1,0 +1,18 @@
+.TITULO_BLANCO {
+	background-color: #0047a9!important;
+	font-size: 14px!important;
+	font-weight: normal;
+	padding:8px!important;
+}
+a.vernota {
+	font-size:13px!important;
+	color: #0047a9!important;
+}
+a.vernota:hover {
+	font-size:13px!important;
+}
+a.link{color: #0047a9!important;}
+a.link:hover{color: #9accea!important;}
+div.datepicker a:hover, div.datepicker a:hover{
+	background-color: #9accea!important;
+}
