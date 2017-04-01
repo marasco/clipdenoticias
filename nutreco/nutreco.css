@@ -4,6 +4,15 @@
 	font-weight: normal;
 	padding:8px!important;
 }
+.TITULO_CELESTE {
+	background-color: #9accea!important;
+	font-size: 12px!important;
+	font-weight: normal;
+	color: white!important;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding:5px!important;
+}
 a.vernota {
 	font-size:13px!important;
 	color: #0047a9!important;

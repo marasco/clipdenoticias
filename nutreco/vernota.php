@@ -86,8 +86,7 @@ $tema = 'nutreco';
 if ($hojaestilo == "default") {
     $hojaestilo = "";
 } else {
-    $hojaestilo = "";
-//$hojaestilo = "<link rel='stylesheet' href='estilos/".$hojaestilo."' type='text/css'>";
+    $hojaestilo = "<link rel='stylesheet' href='./nutreco.css' type='text/css'>";
 }
 
 //Paginacion
@@ -142,7 +141,7 @@ if ($cant_not < 1)
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <title>| clipdenoticias.com | - El resumen de noticias que usted necesita</title>
+        <title>Nutreco - Clipping de Noticias</title>
         <link rel="stylesheet" href="./main.css" type="text/css">
         <?php echo $hojaestilo; ?>
         <script src="../funciones.js" type="text/javascript"></script>

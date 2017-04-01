@@ -137,7 +137,7 @@ if (  !empty($_GET['search'])) {
         (n.codigo_tema = '".$tema."') " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 " . $filtro_fecha_hoy . " order by $orderx n.region asc, n.id desc";
         
 
-        $titulo_barra = $desc_tema[$tema]; 
+        $titulo_barra = $desc_tema[strtoupper($tema)]; 
  }
 }
 echo "<!-- $query -->";
@@ -172,7 +172,7 @@ while ($rs = mysql_fetch_array($con)) {
         $cod_tema = $rs[11];
         $link = $rs[12];
         if ( $cod_tema != $tema_anterior ) {
-            $listado_notas.= "<tr><td height='20' bgcolor='#006666' class='TITULO_BLANCO'>&nbsp;&nbsp;".$desc_tema[$cod_tema]."</td></tr>";
+            $listado_notas.= "<tr><td height='20' bgcolor='#006666' class='TITULO_CELESTE'>&nbsp;&nbsp;".$desc_tema[strtoupper($cod_tema)]."</td></tr>";
         }
         $tema_anterior = $cod_tema;
 
@@ -275,7 +275,7 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
-    <title>clipdenoticias.com</title>
+    <title>Nutreco - Clipping de Noticias</title>
     <link rel="stylesheet" href="./main.css?t=<?php echo microtime(); ?>" type="text/css">
     <link rel="stylesheet" media="screen" type="text/css" href="./datepicker.css" />
     <?php echo $hojaestilo; ?>
