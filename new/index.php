@@ -65,7 +65,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home"><img src="../icon_transparency.png" height="30" /></a>
+				<a class="navbar-brand" href="#home" style="margin-top:10px;padding:0px;"><img src="../icon_transparency.png" height="50" /></a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
@@ -73,7 +73,7 @@
 					
 					<li class="menuItem"><a href="#whatis">Inicio</a></li>
 					<li class="menuItem"><a href="#useit">Servicios</a></li>
-					<li class="menuItem"><a href="#screen">Solicitar Demo</a></li>
+					<li class="menuItem"><a href="#screen">DEMO</a></li>
 					<li class="menuItem"><a href="#contact">Contacto</a></li>
 				</ul>
 			</div>
@@ -84,7 +84,7 @@
 	<!-- FullScreen -->
     <div class="intro-header">
 		<div class="col-xs-12 text-center abcen1">
-			<img src="../logo_transparency.png" /> 
+			<img src="../logo_transparency.png" style="max-height:160px;height:auto;width:auto;max-width:100%;" /> 
 		</div>    
         <!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
@@ -98,7 +98,7 @@
 	<div id="whatis" class="content-section-b" style="border-top: 0">
 		<div class="container">
 
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+			<div class="col-lg-6 col-lg-offset-3 col-md-12 text-center wrap_title">
 				<h2>Nuestros Servicios</h2>
 				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
 				
@@ -157,57 +157,9 @@
 		</div>
 	</div>
 	 
-
-    <div class="content-section-b"> 
-		
-		<div class="container">
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeftBig">
-                     <div id="owl-demo-1" class="owl-carousel">
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-					</div>       
-                </div>
-				
-                <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Drag Gallery</h3>
-					<div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div>
-                    <p class="lead">
-						In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. 
-						Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, 
-						uam non erat mirum sapientiae lorem cupido
-						patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.
-					</p>
-
-					 <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-				</div>  			
-			</div>
-        </div>
-    </div>
- 
 	<!-- Screenshot -->
 	<div id="screen" class="content-section-b">
         <div class="container">
-          <div class="row" >
-			 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-				<h2>Screen App</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
-			 </div>
-		  </div>
 		    <div class="row wow bounceInUp" >
               <div id="owl-demo" class="owl-carousel">
 				
@@ -256,21 +208,21 @@
 	<div  class="content-section-c ">
 		<div class="container">
 			<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center white">
-				<h2>Pide una Demo GRATIS</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
+				<h2>Pedí una DEMO gratuita</h2>
+				<p class="lead" style="margin-top:0">Conocé cómo funciona nuestro servicio de forma gratuita..</p>
 			 </div>
 			<div class="col-md-6 col-md-offset-3 text-center">
 				<div class="mockup-content">
 						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-							<button type="button "><span>Subscribe to our Newsletter</span></button>
+							<button type="button "><span>Solicitar una DEMO</span></button>
 							<div class="morph-content">
 								<div>
 									<div class="content-style-form content-style-form-4 ">
-										<h2 class="morph-clone">Subscribe to our Newsletter</h2>
+										<h2 class="morph-clone">Solicitar una DEMO</h2>
 										<form>
-											<p><label>Your Email Address</label><input type="text"/></p>
-											<p><button>Subscribe me</button></p>
+											<p><label>Tu cuenta de email</label><input type="text"/></p>
+											<p><button>Enviar!</button></p>
 										</form>
 									</div>
 								</div>
@@ -278,7 +230,7 @@
 						</div>
 				</div>
 			</div>	
-			</div>>
+			</div>
 		</div>
 	</div>	
 	 
@@ -319,18 +271,18 @@
 						</div>
 					</div>
 
-					<input type="submit" name="submit" id="submit" value="Submit" class="btn wow tada btn-embossed btn-primary pull-right">
+					<input type="submit" name="submit" id="submit" value="Enviar" class="btn wow tada btn-embossed btn-primary pull-right">
 				</div>
 			</form>
 			
 			<hr class="featurette-divider hidden-lg">
 				<div class="col-md-5 col-md-push-1 address">
 					<address>
-					<h3>Office Location</h3>
-					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">The Pentagon<br>
-					Washington, DC 20301</a><br>
-					Phone: XXX-XXX-XXXX<br>
-					Fax: XXX-XXX-YYYY</p>
+					<h3>Estamos en</h3>
+					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">Ituzaingó<br>
+					Buenos Aires, CP 1714</a><br>
+					Phone: +54 11 5104 4177<br>
+					info@clipdenoticias.com</p>
 					</address>
 
 					<h3>Social</h3>

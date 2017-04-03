@@ -20,12 +20,14 @@ body, html {
 
 .abcen{position: absolute;bottom: 8%;}
 
-.abcen1{position: absolute;top: 20%;}
+.abcen1{position: absolute;top: 35%;padding-top:10px;
+	padding-bottom:10px; 
+background-color: rgba(0,0,0,0.75);}
 
 .content-section-c {
 	border-top: 1px solid #32465A;
 	border-bottom: 1px solid #32465A;
-	background-color: #34495e;
+	background-color: #98003d;
 	padding: 90px 0;
 }
 
@@ -234,6 +236,7 @@ color: #ECEBEB;
 	font-family: arvo;
 	letter-spacing: 3px;
 	font-weight: 400 !important;
+	margin-left: 20px;
 }
 
 .lead {
@@ -246,9 +249,10 @@ color: #ECEBEB;
 	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
 	color: #f8f8f8;
-	background: url(../img/intro/intro5.jpg) no-repeat center center;
+	background: url(../img/intro/clipback2.jpg) no-repeat center center;
 	background-size: cover;
 	text-align: center;
+
 }
 
 .intro-message {
@@ -512,7 +516,7 @@ color: #ECEBEB;
 
 .content-style-form-4 form button:focus,
 .content-style-form-4 form button:hover {
-	background: #1abc9c;
+	background: #232323;
 }
 
 .js .content-style-form-4 p {
@@ -894,7 +898,7 @@ color: #ECEBEB;
 
 .morph-button-inflow-1 .morph-content .morph-clone {
 	color: #FFFFFF;
-	background: #1abc9c;
+	background: #232323;
 }
 
 .morph-button-inflow-2 {
@@ -1060,6 +1064,7 @@ color: #ECEBEB;
 
 /* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		/*
 		.intro-header {
 			height: 100%;
 			padding-top: 50px;
@@ -1070,7 +1075,7 @@ color: #ECEBEB;
 			text-align: center;
 			background-color: #34495e;
 		}
-		
+		*/
 		h1, .h1 {
 			font-size: 50px;
 		}
