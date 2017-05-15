@@ -71,9 +71,9 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
-					<li class="menuItem"><a href="#whatis">Inicio</a></li>
-					<li class="menuItem"><a href="#useit">Servicios</a></li>
-					<li class="menuItem"><a href="#screen">DEMO</a></li>
+					<li class="menuItem"><a href="#home">Inicio</a></li>
+					<li class="menuItem"><a href="#whatis">Servicios</a></li>
+					<li class="menuItem"><a href="#demo">DEMO</a></li>
 					<li class="menuItem"><a href="#contact">Contacto</a></li>
 				</ul>
 			</div>
@@ -107,105 +107,53 @@
 			<div class="row">
 			
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-				  <h3>Follow Me</h3>
-				  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
+				  <img class="rotate" src="img/icon/tweet.svg" alt="Redes Sociales">
+				  <h3>Redes</h3>
+				  <p class="lead">Hacemos un estudio exhaustivo incluso en las redes sociales.</p> 
+				</div>
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/bell.svg" alt="Notificaciones">
+				   <h3>Notificaciones</h3>
+				   <p class="lead">Recibí notificaciones vía email o SMS con los reportes que más te importan.</p> 
+				</div> 
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/calendar.svg" alt="Historial">
+				   <h3>Historial</h3>
+					<p class="lead">Contá con el historial de noticias que más te importan. </p> 
+				</div>
 
-				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-				   <h3>Gallery</h3>
-				   <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
-				   <h3>Retina</h3>
-					<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-			</div><!-- /.row -->
+			</div> 
 				
 			<div class="row tworow">
 			
 				<div class="col-sm-4  wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
+				  <img class="rotate" src="img/icon/laptop.svg" alt="Responsive">
 				  <h3>Responsive</h3>
-				  <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-				 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
+				  <p class="lead">Revisá tu reporte de noticias en cualquier dispositivo.</p> 
+				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/map.svg" alt="Generic placeholder image">
-				   <h3>Google</h3>
-				   <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
+				  <img  class="rotate" src="img/icon/search.svg" alt="Búsqueda exhaustiva">
+				   <h3>Búsqueda</h3>
+				   <p class="lead">Nuestra búsueda manual nos permite no pasar por alto noticias relacionadas al tema de interés. </p>
+				    
+				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/browser.svg" alt="Generic placeholder image">
-				   <h3>Bootstrap</h3>
-				 <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
+				  <img  class="rotate" src="img/icon/stopwatch.svg" alt="Generic placeholder image">
+				   <h3>Tecnología</h3>
+				 <p class="lead">En tu oficina, siempre. Nuestro servicio tiene 99,9% de fiabilidad.</p>
+				   
+				</div>
 				
-			</div><!-- /.row -->
+			</div> 
 		</div>
 	</div>
 	 
-	<!-- Screenshot -->
-	<div id="screen" class="content-section-b">
-        <div class="container">
-		    <div class="row wow bounceInUp" >
-              <div id="owl-demo" class="owl-carousel">
-				
-				<a href="img/slide/1.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
-					</div>
-				</a>
-				
-               <a href="img/slide/2.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/3.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/1.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
-					</div>
-				</a>
-				
-               <a href="img/slide/2.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/3.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
-					</div>
-				</a>
-              </div>       
-          </div>
-        </div>
-
-
-	</div>
 	
-	<div  class="content-section-c ">
+	<div id="demo" class="content-section-c ">
 		<div class="container">
 			<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
@@ -241,30 +189,30 @@
 			<div class="row">
 			
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Contact Us</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
+				<h2>Contactanos</h2>
+				<p class="lead" style="margin-top:0">Solicitá una DEMO o hacenos las preguntas que quieras!</p>
 			</div>
 			
 			<form role="form" action="" method="post" >
 				<div class="col-md-6">
 					<div class="form-group">
-						<label for="InputName">Your Name</label>
+						<label for="InputName">Tu nombre</label>
 						<div class="input-group">
-							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Tu Nombre" required>
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label for="InputEmail">Your Email</label>
+						<label for="InputEmail">Tu Email</label>
 						<div class="input-group">
-							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Tu Email" required  >
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label for="InputMessage">Message</label>
+						<label for="InputMessage">Mensaje</label>
 						<div class="input-group">
 							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
