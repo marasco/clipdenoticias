@@ -61,7 +61,7 @@ if (($_GET['btnBuscar'] == "Buscar") && ($_GET['search'] != "")) {
     // die("1");
     $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
 				from tnotas n, tautores f where 
-				( n.codigo_tema = '" . $tema . "' or n.codigo_tema = '" . $tema2 . "') " . $fecha_inicial_s . " and f.id = n.fuente  and n.estado = 1 and ( n.titulo like '%" . $_GET['search'] . "%' or n.copete like '%" . $_GET['search'] . "%' ) order by n.region asc, id desc";
+				( n.codigo_tema = '" . $tema . "' or n.codigo_tema = '" . $tema2 . "') " . $fecha_inicial_s . " and f.id = n.fuente  and n.estado = 1 and ( n.titulo like '%" . $_GET['search'] . "%' or n.copete like '%" . $_GET['search'] . "%' ) order by FIELD(n.codigo_tema,'YERBA', 'YERBA2'), n.region asc, id desc";
     $titulo_barra = "Resultados de la b&uacute;squeda";
 } else {
 
@@ -69,7 +69,7 @@ if (($_GET['btnBuscar'] == "Buscar") && ($_GET['search'] != "")) {
 
         $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
 				from tnotas n, tautores f where 
-				( n.codigo_tema = '" . $tema . "' or n.codigo_tema = '" . $tema2 . "')  " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota = '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by n.region asc,  id desc";
+				( n.codigo_tema = '" . $tema . "' or n.codigo_tema = '" . $tema2 . "')  " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota = '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by FIELD(n.codigo_tema,'YERBA', 'YERBA2'), n.region asc,  id desc";
         if (isset($_GET['desde'])) {
             $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
 				from tnotas n, tautores f where 
@@ -88,6 +88,7 @@ if (($_GET['btnBuscar'] == "Buscar") && ($_GET['search'] != "")) {
         $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
 				from tnotas n, tautores f where 
 				(n.codigo_tema = '" . $tema . "'  or n.codigo_tema = '" . $tema2 . "' )" . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 " . $filtro_fecha_hoy . " order by $orderx n.region asc, n.id desc";
+    $titulo_barra = $desc_tema[strtoupper($tema)]; 
     };
 }
 echo "<!-- $query -->";
@@ -98,6 +99,7 @@ $actual = 1;
 if ($_GET['page'] != "")
     $actual = $_GET['page'];
 $inicio = ($actual * $CPP) - $CPP;
+$tema_anterior = null;
 while ($rs = mysql_fetch_array($con)) {
     if ($i > -1) {
         $titulo = $rs[3];
@@ -107,6 +109,13 @@ while ($rs = mysql_fetch_array($con)) {
         $autor = $rs[7];
         $idn = $rs[8];
         $tamimg = $rs[9];
+        $cod_tema = $rs[11];
+
+        if ( $cod_tema != $tema_anterior ) {
+            $listado_notas.= "<tr><td height='20' bgcolor='#006666' class='TITULO_CELESTE'>&nbsp;&nbsp;".$desc_tema[strtoupper($cod_tema)]."</td></tr>";
+        }
+        $tema_anterior = $cod_tema;
+
         $listado_notas.=
                 "<tr><td style='font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#888888; '> " . $volanta . "</td></tr>
 			<tr><td bgcolor='#FFFFFF' style='font-family:Georgia, Times New Roman, Times, serif; font-size:18px; color:#555555; text-decoration:none;'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
