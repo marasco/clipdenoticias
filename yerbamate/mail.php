@@ -67,17 +67,18 @@ if (($_GET['btnBuscar'] == "Buscar") && ($_GET['search'] != "")) {
 
     if (($_GET['BuscarFecha'] == "Buscar") && ($_GET['fdia'] != "") && ($_GET['fmes'] != "") && ($_GET['fanio'] != "")) {
 
-        $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
+        $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link 
 				from tnotas n, tautores f where 
 				( n.codigo_tema = '" . $tema . "' or n.codigo_tema = '" . $tema2 . "')  " . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota = '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by FIELD(n.codigo_tema,'YERBA', 'YERBA2'), n.region asc,  id desc";
         if (isset($_GET['desde'])) {
-            $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
+            $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link 
 				from tnotas n, tautores f where 
 				(n.codigo_tema = '" . $tema . "'  or n.codigo_tema = '" . $tema2 . "' )" . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 and n.fecha_nota >= '" . $_GET['desde'] . "' AND n.fecha_nota <= '" . $_GET['fanio'] . "-" . $_GET['fmes'] . "-" . $_GET['fdia'] . "' order by n.fecha_nota desc, n.region asc,  id desc";
         }
-        $titulo_barra = "Notas del " . $_GET['fdia'] . "/" . $_GET['fmes'] . "/" . $_GET['fanio'];
+        //$titulo_barra = "Notas del " . $_GET['fdia'] . "/" . $_GET['fmes'] . "/" . $_GET['fanio'];
         //echo $query;
         //die("3");
+        $titulo_barra = $desc_tema[strtoupper($tema)]; 
     } else {
         $dow = date('D', time());
         if ($dow == 'Mon') {
@@ -85,7 +86,7 @@ if (($_GET['btnBuscar'] == "Buscar") && ($_GET['search'] != "")) {
         }
         $orderx = "";
 
-        $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region
+        $query = "select DATE_FORMAT(n.fecha_nota,'%e'), DATE_FORMAT(n.fecha_nota,'%c'),DATE_FORMAT(n.fecha_nota,'%y'), n.titulo, n.volanta, n.copete, n.texto, f.nombre, n.id, n.tamimg, n.region, n.codigo_tema, n.link 
 				from tnotas n, tautores f where 
 				(n.codigo_tema = '" . $tema . "'  or n.codigo_tema = '" . $tema2 . "' )" . $fecha_inicial_s . " and f.id = n.fuente and n.estado = 1 " . $filtro_fecha_hoy . " order by $orderx n.region asc, n.id desc";
     $titulo_barra = $desc_tema[strtoupper($tema)]; 
@@ -112,7 +113,13 @@ while ($rs = mysql_fetch_array($con)) {
         $cod_tema = $rs[11];
 
         if ( $cod_tema != $tema_anterior ) {
-            $listado_notas.= "<tr><td height='20' bgcolor='#006666' class='TITULO_CELESTE'>&nbsp;&nbsp;".$desc_tema[strtoupper($cod_tema)]."</td></tr>";
+            $listado_notas.= "<tr><td height='20' bgcolor='#006666' style='background-color: #45a7d1!important;
+    font-size: 12px!important;
+    font-weight: normal;
+    color: white!important;
+    text-decoration: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding:5px!important;'>&nbsp;&nbsp;".$desc_tema[strtoupper($cod_tema)]."</td></tr>";
         }
         $tema_anterior = $cod_tema;
 
@@ -235,12 +242,7 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
 
             <tr>
                 <td width="600"  align="center" valign="top">
-                    <table width="600" style="border:solid 1px; border-color:#fcfcfc" border="0" cellspacing="6" cellpadding="0">
-                        <tr>
-
-                            <td style="padding:10px;color:#ffffff;font-family:Arial;" bgcolor="#45a7d1" ><?php echo $titulo_barra; ?></td>
-
-                        </tr>
+                    <table width="600" style="border:solid 1px; border-color:#fcfcfc" border="0" cellspacing="6" cellpadding="0"> 
                         <?php echo $listado_notas; ?>
 
 
