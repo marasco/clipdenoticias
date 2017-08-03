@@ -129,7 +129,7 @@ while ($rs = mysql_fetch_array($con)) {
 			<tr><td bgcolor='#FFFFFF' style='font-family:Georgia, Times New Roman, Times, serif; font-size:18px; color:#555555; text-decoration:none;'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
 			<tr><td height='1' valign='middle' bgcolor='#cccccc'></td></tr>
 			<tr><td style='font-family:  Arial, Helvetica, sans-serif; font-size:11px; color:#666666; text-decoration:none;'>" . $resumen . "</td></tr>
-			<tr><td align='right' valign='middle'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' class='vernota'>Ver nota completa</a> <a target='_blank' class='vernota' href='".$link."'>Ir a la nota original</a></td></tr>
+			<tr><td align='right' valign='middle'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' class='vernota'>Ver nota completa</a> | <a target='_blank' class='vernota' href='".$link."'>Ir a la nota original</a></td></tr>
 			<tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'><span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; '>&nbsp;Fuente: <span style='color:#45a7d1;'>" . $autor . "</span></span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; '>, " . $fecha . "&nbsp;</span></span></td></tr>
 			<tr><td height='2'><hr size='1' noshade='noshade' color='#666666' /></td></tr>";
     };
