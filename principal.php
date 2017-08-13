@@ -475,7 +475,9 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                                     if ($tema == "pra") {
                                         echo "<a href='http://www.fertilidadperu.com' target='blank'><img src='logos/pranor_2012.gif' width='100%' border='0'/></a>";
                                     } elseif ($tema == 'SEGUROS') {
-                                        echo "<a href='#' ><img src='logos/cnp.jpg' width='680' border='0'/></a>";
+                                        echo "<a href='#' ><img src='logos/cnp.jpg' width='680' border='0'/></a>"; 
+                                    } elseif ($tema == 'EDEN') {
+                                        echo "<a href='#' ><img src='logos/eden-logo.jpg' width='140' border='0'/></a>";
                                    } elseif ($tema == 'TURISMO') {
                                         echo "<a href='#' ><img src='logos/turismo.jpg' width='680' border='0'/></a>";
                                     } elseif ($tema == 'industria') {
