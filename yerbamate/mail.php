@@ -128,10 +128,10 @@ while ($rs = mysql_fetch_array($con)) {
         }
         $listado_notas.=
                 "<tr><td style='font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#888888; '> " . $volanta . "</td></tr>
-			<tr><td bgcolor='#FFFFFF' style='font-family:Georgia, Times New Roman, Times, serif; font-size:18px; color:#555555; text-decoration:none;'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
+			<tr><td bgcolor='#FFFFFF' style='font-family:Georgia, Times New Roman, Times, serif; font-size:18px; color:#555555; text-decoration:none;'><a href='{$link}' class='titulo2'>" . $titulo . "</a></td></tr>
 			<tr><td height='1' valign='middle' bgcolor='#cccccc'></td></tr>
 			<tr><td style='font-family:  Arial, Helvetica, sans-serif; font-size:11px; color:#666666; text-decoration:none;'>" . $resumen . "</td></tr>
-			<tr><td align='right' valign='middle'><a href='{$link}' class='vernota'>Ver Nota</a> | <a target='_blank' class='vernota' href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "'>Ver Nota en CDN</a></td></tr>
+			<tr><td align='right' valign='middle'><a href='{$link}' target='_blank' class='vernota'>Ver Nota</a> | <a  class='vernota' href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "'>Ver Nota en CDN</a></td></tr>
 			<tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'><span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; '>&nbsp;Fuente: <span style='color:rgb(17,186,0);'>" . $autor . "</span></span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; '>, " . $fecha . "&nbsp;</span></span></td></tr>
 			<tr><td height='2'><hr size='1' noshade='noshade' color='#666666' /></td></tr>";
     };

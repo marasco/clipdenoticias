@@ -178,18 +178,18 @@ while ($rs = mysql_fetch_array($con)) {
         "<tr><td class='volanta'>
         
         " . $volanta . "</td></tr>
-        <tr><td bgcolor='#FFFFFF' class='titulo'><a href='./vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
+        <tr><td bgcolor='#FFFFFF' class='titulo'><a href='{$link}' class='titulo2'>" . $titulo . "</a></td></tr>
         <tr><td height='1' valign='middle' bgcolor='#cccccc'></td></tr>
         <tr><td class='texto'>" . $resumen . "</td></tr>
-        <tr><td align='right' valign='middle'><a href='{$link}' class='vernota'>Ver Nota completa</a></td></tr>
+        <tr><td align='right' valign='middle'><a href='{$link}' target='_blank' class='vernota'>Ver Nota completa</a></td></tr>
         <tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'>
         <span class='fondo_gris'>
         <span class='fuente'>&nbsp;Fuente: <span class='autor'>" . $autor . "</span></span>
         <span class='fecha'>, " . $fecha . "&nbsp;</span>
         </span>
         ";
-        
-        $listado_notas .="<br /><a target='_blank' class='vernota' href='./vernota.php?id=" . $idn . "'>Ver Nota en CDN</a>";
+
+        $listado_notas .="<br /><a class='vernota' href='./vernota.php?id=" . $idn . "'>Ver Nota en CDN</a>";
         
         $listado_notas .="</td></tr>
         <tr><td height='2' align='right' valign='bottom' bgcolor='#333333'></td></tr>";
