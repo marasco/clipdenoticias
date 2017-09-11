@@ -85,7 +85,7 @@ $tema = null;
 if (!empty($_GET['tema'])){
     $tema = $_GET['tema'];
 } 
-$hojaestilo = "<link rel='stylesheet' href='./custom.css' type='text/css'>";
+$hojaestilo = "<link rel='stylesheet' href='./custom.css?t=".time()."' type='text/css'>";
 
 //Paginacion
 $getema = "&tema=" . $tema;
@@ -171,24 +171,25 @@ while ($rs = mysql_fetch_array($con)) {
         }
         $tema_anterior = $cod_tema;
 
-
+        if (empty($link)){
+            $link = "./vernota.php?id=" . $idn;
+        }
         $listado_notas.=
         "<tr><td class='volanta'>
-
+        
         " . $volanta . "</td></tr>
         <tr><td bgcolor='#FFFFFF' class='titulo'><a href='./vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
         <tr><td height='1' valign='middle' bgcolor='#cccccc'></td></tr>
         <tr><td class='texto'>" . $resumen . "</td></tr>
-        <tr><td align='right' valign='middle'><a href='./vernota.php?id=" . $idn . "' class='vernota'>Ver nota completa</a></td></tr>
+        <tr><td align='right' valign='middle'><a href='{$link}' class='vernota'>Ver Nota completa</a></td></tr>
         <tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'>
         <span class='fondo_gris'>
         <span class='fuente'>&nbsp;Fuente: <span class='autor'>" . $autor . "</span></span>
         <span class='fecha'>, " . $fecha . "&nbsp;</span>
         </span>
         ";
-        if (!empty($link)){
-            $listado_notas .="<br /><a target='_blank' class='vernota' href='{$link}'>Ir a la nota original</a>";
-        }
+        
+        $listado_notas .="<br /><a target='_blank' class='vernota' href='./vernota.php?id=" . $idn . "'>Ver Nota en CDN</a>";
         
         $listado_notas .="</td></tr>
         <tr><td height='2' align='right' valign='bottom' bgcolor='#333333'></td></tr>";
@@ -321,7 +322,7 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                         <tr>
                             <td  colspan="2" align="center" valign="top">
                                 <div style = "background:#FFF; color: #777; font-size:18px; font-family: Helvetica; padding:4px;text-align:left;" >
-                                    <div style=""><a href="/yerbamate/" border="0"><img width="700" src="./logo.png?x=8282" border="0" /></a></div>
+                                    <div align="center" style="margin:0 auto 25px;"><a href="/yerbamate/" border="0"><img width="300" src="./logo.png" border="0" /></a></div>
                                     <div style="float:left;">Clipping de Noticias</div>
                                     <div style="float:right">
                                         <a class="link" href="?tema=YERBA">Argentina</a> 

@@ -114,7 +114,7 @@ while ($rs = mysql_fetch_array($con)) {
         $link = $rs[12];
 
         if ( $cod_tema != $tema_anterior ) {
-            $listado_notas.= "<tr><td height='20' bgcolor='#006666' style='background-color: #45a7d1!important;
+            $listado_notas.= "<tr><td height='20' bgcolor='#006666' style='background-color: rgb(17,186,0)!important;
     font-size: 12px!important;
     font-weight: normal;
     color: white!important;
@@ -123,14 +123,16 @@ while ($rs = mysql_fetch_array($con)) {
     padding:5px!important;'>&nbsp;&nbsp;".$desc_tema[strtoupper($cod_tema)]."</td></tr>";
         }
         $tema_anterior = $cod_tema;
-
+        if (empty($link)){
+            $link = "http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn;
+        }
         $listado_notas.=
                 "<tr><td style='font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#888888; '> " . $volanta . "</td></tr>
 			<tr><td bgcolor='#FFFFFF' style='font-family:Georgia, Times New Roman, Times, serif; font-size:18px; color:#555555; text-decoration:none;'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' 				class='titulo2'>" . $titulo . "</a></td></tr>
 			<tr><td height='1' valign='middle' bgcolor='#cccccc'></td></tr>
 			<tr><td style='font-family:  Arial, Helvetica, sans-serif; font-size:11px; color:#666666; text-decoration:none;'>" . $resumen . "</td></tr>
-			<tr><td align='right' valign='middle'><a href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "' class='vernota'>Ver nota completa</a> | <a target='_blank' class='vernota' href='".$link."'>Ir a la nota original</a></td></tr>
-			<tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'><span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; '>&nbsp;Fuente: <span style='color:#45a7d1;'>" . $autor . "</span></span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; '>, " . $fecha . "&nbsp;</span></span></td></tr>
+			<tr><td align='right' valign='middle'><a href='{$link}' class='vernota'>Ver Nota</a> | <a target='_blank' class='vernota' href='http://www.clipdenoticias.com/yerbamate/vernota.php?id=" . $idn . "'>Ver Nota en CDN</a></td></tr>
+			<tr><td height='20' align='right' valign='middle' bgcolor='#ffffff'><span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; '>&nbsp;Fuente: <span style='color:rgb(17,186,0);'>" . $autor . "</span></span><span style='font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; '>, " . $fecha . "&nbsp;</span></span></td></tr>
 			<tr><td height='2'><hr size='1' noshade='noshade' color='#666666' /></td></tr>";
     };
     $i++;
@@ -197,8 +199,8 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
             .texto { font-family:  Arial, Helvetica, sans-serif; font-size:11px; color:#666666; text-decoration:none; }
             .texto:hover {text-decoration:none; }
 
-            .vernota {font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#45a7d1; text-decoration:none;}
-            .vernota:hover {font-family:  Arial, Helvetica, sans-serif; font-size:10px; color:#45a7d1; text-decoration:underline; }
+            .vernota {font-family: Arial, Helvetica, sans-serif; font-size:10px; color:rgb(17,186,0); text-decoration:none;}
+            .vernota:hover {font-family:  Arial, Helvetica, sans-serif; font-size:10px; color:rgb(17,186,0); text-decoration:underline; }
             .fuente {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; }
             .fecha {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; }
             .rojo {color:#ff3333;}
@@ -232,7 +234,8 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
             <tr>
                 <td  colspan="1" align="center" valign="top">
                     <div style = "background:#FFF; color: #777; font-size:18px; font-family: Helvetica; padding:4px;text-align:left;" >
-                        <div style="float:left;padding-right: 20px;"><a href="/yerbamate/" border="0"><img width="600" src="http://www.clipdenoticias.com/yerbamate/logo.png?x=8282" border="0" /></a></div>
+                         
+                        <div align="center" style="margin:0 auto 25px;"><a href="/yerbamate/" border="0"><img width="300" src="http://www.clipdenoticias.com/yerbamate/logo.png" border="0" /></a></div>
                         <div style="float:left; padding:20px;">Clipping de Noticias</div> </div>
                 </td>
             </tr>
