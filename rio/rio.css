@@ -1,0 +1,33 @@
+.TITULO_BLANCO {
+	background-color: #122384!important;
+	font-size: 14px!important;
+	font-weight: normal;
+	padding:8px!important;
+}
+.TITULO_CELESTE {
+	background-color: #e4f1f9!important;
+	font-size: 12px!important;
+	font-weight: normal;
+	color: white!important;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding:5px!important;
+}
+a.vernota {
+	font-size:13px!important;
+	color: #122384!important;
+}
+a.vernota:hover {
+	font-size:13px!important;
+}
+a.link{color: #122384!important;}
+a.link:hover{color: #e4f1f9!important;}
+div.datepicker a:hover, div.datepicker a:hover{
+	background-color: #e4f1f9!important;
+}
+.myButton{
+	background-color: #0047a9!important;
+}
+.myButton:hover{
+	background-color: #122384!important;
+}

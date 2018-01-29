@@ -1,0 +1,144 @@
+/* noticias */
+.volanta {font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#888888; }
+.copete {font-family: Georgia, "Times New Roman", Times, serif;; font-size:12px; color:#888888; }
+.titulo {font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; color:#555555; text-decoration:none; }
+.titulo:hover {font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; color:#006666; background-color:#f9f9f9; text-decoration:none; }
+.titulo2 {font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; color:#555555; text-decoration:none; }
+.titulo2:hover {font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; color:#006666; background-color:#f9f9f9; text-decoration:none; }
+.lnk_pagina_actual  {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#ff3300; font-weight:bold; text-decoration:none; }
+.lnk_pagina_actual:hover {text-decoration:none; }
+
+
+.texto { font-family:  Arial, Helvetica, sans-serif; font-size:11px; color:#666666; text-decoration:none; }
+.texto:hover {text-decoration:none; }
+
+.vernota {font-family: Arial, Helvetica, sans-serif; font-size:10px; color:#028974; text-decoration:none;}
+.vernota:hover {font-family:  Arial, Helvetica, sans-serif; font-size:10px; color:#028974; text-decoration:underline; }
+.fuente {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; font-weight:bold; }
+.fecha {font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#333333; }
+.rojo {color:#ff3333;}
+.autor {color:#028974;}
+.fondo_gris {background-color:#eeeeee; }
+.titulo_chico {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color:#006666; 
+	text-decoration:none; 
+	
+}
+.titulo_chico:hover {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color:#00CC00; 
+	background-color:#f9f9f9;
+	text-decoration:none; 
+	
+}
+/*FIN NOTICAS*/
+
+
+/**/
+.TITULO_BLANCO {font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 11px; text-decoration:none;}
+.TITULO_BLANCO:hover  {font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 11px; text-decoration:none;}
+.TABLA_VERDE{ 
+	border: 1px solid ;
+	border-color: #006666;
+}
+
+.texto_portada {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:justify;
+	text-decoration:none;
+	color:#666666;
+	text-indent: 0px;
+	margin-left: 6px;
+	margin-top: 8px;
+}
+.texto_portada_2 {
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	text-decoration:none;
+	color:#666666;
+	text-indent: 0px;
+	margin: 4px;
+}
+
+.TABLA_GRIS{ 
+	border: 1px solid ;
+	border-color: #cccccc;
+}
+.LINEAS_GRISES { width:90%; color: #CCCCCC; size:1px;}
+
+.BOTON_NARANJA
+{width:80px;height:18px;border: 0px solid  #999999; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#028974; font-size:10px; color: #ffffff; cursor:pointer;}
+.BOTON_NARANJA:hover
+{width:80px;height:18px;border: 0px solid  #999999; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#028974; font-size:10px; color: #ffffff; cursor:pointer;}
+.link {text-decoration: none; font-size:14px;color: orange;}
+.TEXTAREA
+{
+width:500px; height:120px; border: 1px solid  #999999; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#FFF7F4; font-size:10px; color: #242424; overflow:auto
+}
+/*LINKS*/
+.siguiente{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #333333}
+.siguiente:active{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #333333}
+.siguiente:link{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #333333}
+.siguiente:hover{text-decoration:underline; color: #333333}
+#access{overflow: visible;}
+.LINKS_MENU{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #ffffff;}
+.LINKS_MENU:hover{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #eeeeee;}
+
+.LINKS_MENU2{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #028974;}
+.LINKS_MENU2:hover{text-decoration:none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color:#028974;}
+
+/*.texto_verde { font-size:10px; color: #00CC00; font-family:Verdana, Arial, Helvetica, sans-serif; }*/
+.verde_logo {font-size:10px; font-family:Verdana, Arial, Helvetica, sans-serif;; color: #009933}
+.texto_verde { font-size:10px; color:#003366; font-family:Verdana, Arial, Helvetica, sans-serif; }
+.texto_error { font-size:10px; color: #003366; font-family:Verdana, Arial, Helvetica, sans-serif; }
+/*INPUTB OXS*/
+
+.datos_textbox {width:100px; height:18px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color:#028974 ;}
+.form_textbox_200 {width:200px; height:18px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+.form_textbox_180 {width:180px;padding:10px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+.form_textbox_60 {width:60px; height:18px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ; text-align:left; }
+.form_textbox_cv {width:60px; height:18px; border: 0px solid ; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#424242; font-size:10px; color: #ffffff; font-weight:bolder; text-align:center;}
+.form_2numeros {width:40px; height:18px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color:#028974 ;}
+.form_4numeros {width:60px; height:18px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+.form_textarea2 {width:400px; height:36px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+.form_textarea4 {width:400px; height:72px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+.form_textarea8 {width:400px; height:144px; border: 1px solid  #cccccc; font-family: Verdana, Arial, Helvetica, sans-serif; background-color:#fcfcfc; font-size:10px; color: #028974 ;}
+/*INPUT BOXS TRANSPARENTE*/
+.dinerotransparente {width:80px; height:15px; border: 0px; background-color:#ffffff; text-decoration:none;  font-family:Verdana, Arial, Helvetica, sans-serif; font-size:10px; color:#666666; border-bottom-style:none; border-bottom-color:#EEE6E6}
+
+body {margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px}
+
+.divc {cursor:pointer; }
+
+
+
+    .myButton {
+        
+       
+        background-color:orange;
+        
+        border:1px solid #ccc;
+        
+        display:inline-block;
+        color:#fff;
+        font-family:arial;
+        font-size:14px;
+        font-weight:bold;
+        padding:8px 14px;
+        margin-right: 10px;
+        text-decoration:none;
+        cursor:pointer;
+        
+    }
+    .myButton:hover {
+         background-color: rgb(240, 96, 0);
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }

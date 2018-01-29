@@ -401,8 +401,10 @@ function fecha_diff($data1, $data2) {
     return $sl_retorna;
 }
 
-if (strtolower($user) == "cityscape")
+if (strtolower($user) == "cityscape"){
     $logos = "<img src='logos/cityscape.jpg' />";
+ 
+}
 
 $nowYear = date('Y', time());
 $nowMonth = intval(date('m', time()) - 1);
@@ -482,6 +484,8 @@ if (isset($_GET['fanio']) && isset($_GET['fmes']) && isset($_GET['fdia'])) {
                                         echo "<a href='#' ><img src='logos/Univerx.jpg' height='120' border='0'/></a>"; 
                                     } elseif (strtoupper($tema) == 'PROCREARTE') {
                                         echo "<a href='#' ><img src='logos/procrearte.jpg' width='680' border='0'/></a>";   
+                                    } elseif (strtoupper($tema) == 'IM FERTI') {
+                                        echo "<a href='#' ><img src='logos/im_ferti.jpg' width='680' border='0'/></a>";   
                                     } elseif ($tema == 'EDEN') {
                                         echo "<a href='#' ><img src='logos/eden-logo.jpg' width='140' border='0'/></a>";
                                    } elseif ($tema == 'TURISMO') {
