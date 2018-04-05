@@ -141,7 +141,7 @@ if ($cant_not < 1)
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <title>rio - Clipping de Noticias</title>
+        <title>RIO PARANA - Clipping de Noticias</title>
         <link rel="stylesheet" href="./main.css" type="text/css">
         <?php echo $hojaestilo; ?>
         <script src="../funciones.js" type="text/javascript"></script>
