@@ -319,6 +319,13 @@ while ($rs = mysql_fetch_array($con)) {
   </tr>";
                 $tit5 = 1;
             }
+            if (($tit6 == 0) && ($rs[10] == "IPW")) {
+                $listado_notas.=
+                        "<tr>
+    <td height='20' bgcolor='#006666' class='TITULO_BLANCO'>&nbsp;&nbsp;IPW</td>
+  </tr>";
+                $tit6 = 1;
+            }
         }
         $listado_notas.=
                 "<tr><td class='volanta'>

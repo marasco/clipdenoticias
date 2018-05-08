@@ -468,6 +468,7 @@ function achicar($tamano, $img_s, $img_save) {
                                                                  <option value='Debate'>Debate</option>
                                                                  <option value='Saint Maarten'>Saint Maarten</option>
                                                                  <option value='New York'>New York</option>
+                                                                 <option value='IPW'>IPW</option>
                                                                  <option value='Simon Shopping Destinations'>Simon Shopping Destinations</option>
                                                                  <option value='Las Vegas'>Las Vegas</option>
                                                                  <option value='Dubai'>Dubai</option>
