@@ -199,7 +199,7 @@
 					<div class="form-group">
 						<label for="InputName">Tu nombre</label>
 						<div class="input-group">
-							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="Tu Nombre" required>
+							<input type="text" class="form-control" name="InputName" id="field_name" placeholder="Tu Nombre" required>
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
@@ -207,7 +207,7 @@
 					<div class="form-group">
 						<label for="InputEmail">Tu Email</label>
 						<div class="input-group">
-							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Tu Email" required  >
+							<input type="email" class="form-control" id="field_email" name="InputEmail" placeholder="Tu Email" required  >
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
@@ -215,12 +215,12 @@
 					<div class="form-group">
 						<label for="InputMessage">Mensaje</label>
 						<div class="input-group">
-							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+							<textarea name="InputMessage" id="field_message" class="form-control" rows="5" required></textarea>
 							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
 						</div>
 					</div>
 
-					<input type="submit" name="submit" id="submit" value="Enviar" class="btn wow tada btn-embossed btn-primary pull-right">
+					<input type="button" name="button" id="send_contact_email" value="Enviar" class="btn wow tada btn-embossed btn-primary pull-right">
 				</div>
 			</form>
 			
@@ -261,6 +261,44 @@
 		$(document).ready( function() {
 		  $('.navbar-default').stickUp();
 		  window.demo_requested=true;
+
+		  // contact email
+
+		  $('#send_contact_email').click(function(){
+		  	if ($('#field_name').val().length<3){
+				$.growl.warning({ duration:5000, title: "Error", message: 'Tu nombre no es valido.'});
+		  		return false;
+		  	}
+		  	if ($('#field_email').val().length<3){
+				$.growl.warning({ duration:5000, title: "Error", message: 'Tu email no es valido.'});
+		  		return false;
+		  	}
+		  	if ($('#field_message').val().length<3){
+				$.growl.warning({ duration:5000, title: "Error", message: 'El mensaje no es valido.'});
+		  		return false;
+		  	}
+
+		    $.growl.notice({ duration:5000, title: "Aguarda", message: 'Enviando solicitud...'});
+
+			  $.ajax({
+				  type: "POST",
+				  url: 'xhr_request_contact.php',
+				  data: {
+				  	email: $('#field_email').val(),
+				  	name: $('#field_name').val(),
+				  	message: $('#field_message').val()
+				  },
+				  success: function(){
+				  	$('#field_name').val('');
+				  	$('#field_email').val('');
+				  	$('#field_message').val('');
+			  		$.growl.notice({ duration:5000, title: "Gracias!", message: 'Te contestaremos a la brevedad.'});
+
+				  }
+				});
+		  });
+		  
+		  // demo request
 		  $('#request_demo').click(function(){
 		  	if ($('#request_demo_input').val().length<3){
 				$.growl.warning({ duration:5000, title: "Error", message: 'Tu direccion de email no es valida.'});
@@ -274,11 +312,14 @@
 				  url: 'xhr_request_demo.php',
 				  data: {email: $('#request_demo_input').val()},
 				  success: function(){
+				  	$('#request_demo_input').val('');
+				  	$('#request_demo_input').attr('disabled','disabled');
 			  		$.growl.notice({ duration:5000, title: "Gracias!", message: 'Te contestaremos a la brevedad.'});
 
 				  }
 				});
-		  })
+		  });
+
 		});
 	  });
 	

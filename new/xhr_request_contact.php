@@ -1,6 +1,8 @@
 <?php
 
 $em = $_REQUEST['email'];
+$name = $_REQUEST['name'];
+$message = $_REQUEST['message'];
 if (empty($em)){
 die('OK');
 }
@@ -63,15 +65,17 @@ $mail->SMTPOptions = array(
 $mail->setFrom('cmarasco@clipdenoticias.com', 'Clip de Noticias');
 $mail->addAddress('cmarasco@clipdenoticias.com', 'Clip de Noticias');
 $mail->addAddress('francisco@flydevs.com', 'Clip de Noticias');
-$mail->Subject = 'Solicitud de DEMO';
+$mail->Subject = 'Contacto Web';
 $html='';
-$html.= "<p>El Email {$em} ha solicitado una demo.</p>";
+$html.= "<p>Email: {$em}</p>";
+$html.= "<p>Nombre: {$name}</p>";
+$html.= "<p>Mensaje: {$message}</p>";
 //$html.= "<p>Website: {$website}</p>";
 //$html.= "<p>Message: {$message}</p>";
 $mail->msgHTML($html);
 
 //Replace the plain text body with one created manually
-$mail->AltBody = "Email: {$em}";
+$mail->AltBody = "Email: {$em}, Mensaje: {$message}";
 
 //Attach an image file
 //$mail->addAttachment('images/phpmailer_mini.png');
