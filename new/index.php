@@ -30,7 +30,8 @@
     <link href="css/owl.theme.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
-	
+	<link href="css/jquery.growl.css" rel="stylesheet">
+
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="css/magnific-popup.css"> 
 	
@@ -71,6 +72,7 @@
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
 					
+					<li class="menuItem"><a href="#acceder">Acceder</a></li>
 					<li class="menuItem"><a href="#home">Inicio</a></li>
 					<li class="menuItem"><a href="#whatis">Servicios</a></li>
 					<li class="menuItem"><a href="#demo">DEMO</a></li>
@@ -100,7 +102,6 @@
 
 			<div class="col-lg-6 col-lg-offset-3 col-md-12 text-center wrap_title">
 				<h2>Nuestros Servicios</h2>
-				<p class="lead" style="margin-top:0">A special thanks to Death.</p>
 				
 			</div>
 			
@@ -158,7 +159,7 @@
 			<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
 				<h2>Pedí una DEMO gratuita</h2>
-				<p class="lead" style="margin-top:0">Conocé cómo funciona nuestro servicio de forma gratuita..</p>
+				<p class="lead" style="margin-top:0">Conocé cómo funciona nuestro servicio de forma gratuita.</p>
 			 </div>
 			<div class="col-md-6 col-md-offset-3 text-center">
 				<div class="mockup-content">
@@ -169,8 +170,8 @@
 									<div class="content-style-form content-style-form-4 ">
 										<h2 class="morph-clone">Solicitar una DEMO</h2>
 										<form>
-											<p><label>Tu cuenta de email</label><input type="text"/></p>
-											<p><button>Enviar!</button></p>
+											<p><label>Tu cuenta de email</label><input id="request_demo_input" type="text" placeholder="Email" /></p>
+											<p><button type="button" id="request_demo">Enviar!</button></p>
 										</form>
 									</div>
 								</div>
@@ -229,8 +230,8 @@
 					<h3>Estamos en</h3>
 					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">Ituzaingó<br>
 					Buenos Aires, CP 1714</a><br>
-					Phone: +54 11 5104 4177<br>
-					info@clipdenoticias.com</p>
+					Phone: +54 911 5825 3363<br>
+					<a href="mailto:info@clipdenoticias.com">info@clipdenoticias.com</a></p>
 					</address>
 
 					<h3>Social</h3>
@@ -251,6 +252,7 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.js"></script>
+	<script src="js/jquery.growl.js"></script>
 	<script src="js/script.js"></script>
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
@@ -258,7 +260,25 @@
 	  jQuery(function($) {
 		$(document).ready( function() {
 		  $('.navbar-default').stickUp();
-		  
+		  window.demo_requested=true;
+		  $('#request_demo').click(function(){
+		  	if ($('#request_demo_input').val().length<3){
+				$.growl.warning({ duration:5000, title: "Error", message: 'Tu direccion de email no es valida.'});
+
+		  		return false;
+		  	}
+		  				  $.growl.notice({ duration:5000, title: "Aguarda", message: 'Enviando solicitud...'});
+
+			  $.ajax({
+				  type: "POST",
+				  url: 'xhr_request_demo.php',
+				  data: {email: $('#request_demo_input').val()},
+				  success: function(){
+			  		$.growl.notice({ duration:5000, title: "Gracias!", message: 'Te contestaremos a la brevedad.'});
+
+				  }
+				});
+		  })
 		});
 	  });
 	
