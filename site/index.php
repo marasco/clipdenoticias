@@ -238,7 +238,7 @@
 					<h3>Social</h3>
 					<li class="social"> 
 					<a target="_blank" href="https://www.facebook.com/clip.denoticias"><i class="fa fa-facebook-square fa-size"> </i></a>
-					<a href="mailto:info@clipdenoticias.com"><i class="fa  fa-envlope fa-size"> </i> </a>  
+					<a href="mailto:info@clipdenoticias.com"><i class="fa  fa-envelope fa-size"> </i> </a>  
 					</li>
 				</div>
 			</div>
@@ -256,6 +256,20 @@
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
 	<script type="text/javascript">
+
+
+    function nextBackground() {
+	  $( ".intro-header" ).fadeOut( 200, function() {
+	  $( ".intro-header" ).fadeIn( 500 );
+
+        window.body.css(
+            'background-image',
+        window.backgrounds[window.current = ++window.current % window.backgrounds.length]);
+
+        setTimeout(nextBackground, 5000);
+    });
+    }
+
 	  jQuery(function($) {
 		$(document).ready( function() {
 		  $('.navbar-default').stickUp();
@@ -320,6 +334,28 @@
 		  });
 
 		});
+
+
+ // background clip
+ /*
+    window.body = $('.intro-header');
+    window.backgrounds = [
+      'url(/site/img/intro/clipback5.jpg)', 
+      'url(/site/img/intro/clipback2.jpg)', 
+      'url(/site/img/intro/clipback3.jpg)', 
+      'url(/site/img/intro/clipback4.jpg)', 
+      'url(/site/img/intro/clipback7.jpg)', 
+      'url(/site/img/intro/clipback6.jpg)', 
+      ];
+    window.current = 0;
+
+    setTimeout(nextBackground, 5000);
+    window.body.css('background-repeat', 'no-repeat');
+    window.body.css('background-position', 'center center');
+    window.body.css('background-size', 'cover');
+    window.body.css('background-image', backgrounds[0]);
+
+*/
 	  });
 	
 	</script>
