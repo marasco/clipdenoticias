@@ -6,10 +6,10 @@
 <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--> <html> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
     <meta name="author" content="">
+    <meta charset="utf-8">
 
     <title>Clip de Noticias</title>
 
@@ -20,7 +20,8 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-	
+	<link rel="icon" type="image/png" href="icon_transparency.png" />
+
     <!-- Custom CSS-->
     <link href="css/general.css" rel="stylesheet">
 	
@@ -66,7 +67,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home" style="margin-top:10px;padding:0px;"><img src="../icon_transparency.png" height="50" /></a>
+				<a class="navbar-brand" href="#home" style="margin-top:10px;padding:0px;"><img src="icon_transparency.png" height="50" /></a>
 			</div>
 
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
@@ -86,7 +87,7 @@
 	<!-- FullScreen -->
     <div class="intro-header">
 		<div class="col-xs-12 text-center abcen1">
-			<img src="../logo_transparency.png" style="max-height:160px;height:auto;width:auto;max-width:100%;" /> 
+			<img src="logo_transparency.png" style="max-height:160px;height:auto;width:auto;max-width:100%;" /> 
 		</div>    
         <!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
@@ -116,13 +117,13 @@
 				<div class="col-sm-4 wow fadeInDown text-center">
 				  <img  class="rotate" src="img/icon/bell.svg" alt="Notificaciones">
 				   <h3>Notificaciones</h3>
-				   <p class="lead">Recibí notificaciones vía email o SMS con los reportes que más te importan.</p> 
+				   <p class="lead">Recib&iacute; notificaciones v&iacute;a email o SMS con los reportes que m&aacute;s te importan.</p> 
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
 				  <img  class="rotate" src="img/icon/calendar.svg" alt="Historial">
 				   <h3>Historial</h3>
-					<p class="lead">Contá con el historial de noticias que más te importan. </p> 
+					<p class="lead">Cont&aacute; con el historial de noticias que m&aacute;s te importan. </p> 
 				</div>
 
 			</div> 
@@ -132,19 +133,19 @@
 				<div class="col-sm-4  wow fadeInDown text-center">
 				  <img class="rotate" src="img/icon/laptop.svg" alt="Responsive">
 				  <h3>Responsive</h3>
-				  <p class="lead">Revisá tu reporte de noticias en cualquier dispositivo.</p> 
+				  <p class="lead">Revis&aacute; tu reporte de noticias en cualquier dispositivo.</p> 
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/search.svg" alt="Búsqueda exhaustiva">
-				   <h3>Búsqueda</h3>
-				   <p class="lead">Nuestra búsueda manual nos permite no pasar por alto noticias relacionadas al tema de interés. </p>
+				  <img  class="rotate" src="img/icon/search.svg" alt="B&uacute;squeda exhaustiva">
+				   <h3>B&uacute;squeda</h3>
+				   <p class="lead">Nuestra b&uacute;squeda manual nos permite no pasar por alto noticias relacionadas al tema de inter&eacute;s. </p>
 				    
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
 				  <img  class="rotate" src="img/icon/stopwatch.svg" alt="Generic placeholder image">
-				   <h3>Tecnología</h3>
+				   <h3>Tecnolog&iacute;a</h3>
 				 <p class="lead">En tu oficina, siempre. Nuestro servicio tiene 99,9% de fiabilidad.</p>
 				   
 				</div>
@@ -158,8 +159,8 @@
 		<div class="container">
 			<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
-				<h2>Pedí una DEMO gratuita</h2>
-				<p class="lead" style="margin-top:0">Conocé cómo funciona nuestro servicio de forma gratuita.</p>
+				<h2>Ped&iacute; una DEMO gratuita</h2>
+				<p class="lead" style="margin-top:0">Conoc&eacute; c&oacute;mo funciona nuestro servicio de forma gratuita.</p>
 			 </div>
 			<div class="col-md-6 col-md-offset-3 text-center">
 				<div class="mockup-content">
@@ -191,7 +192,7 @@
 			
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
 				<h2>Contactanos</h2>
-				<p class="lead" style="margin-top:0">Solicitá una DEMO o hacenos las preguntas que quieras!</p>
+				<p class="lead" style="margin-top:0">Solicit&aacute; una DEMO o hacenos las preguntas que quieras!</p>
 			</div>
 			
 			<form role="form" action="" method="post" >
@@ -228,7 +229,7 @@
 				<div class="col-md-5 col-md-push-1 address">
 					<address>
 					<h3>Estamos en</h3>
-					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">Ituzaingó<br>
+					<p class="lead"><a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">Ituzaing&oacute;<br>
 					Buenos Aires, CP 1714</a><br>
 					Phone: +54 911 5825 3363<br>
 					<a href="mailto:info@clipdenoticias.com">info@clipdenoticias.com</a></p>

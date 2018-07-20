@@ -543,7 +543,7 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
                                                 <td width="4" class="LINKS_MENU">|</td><td width="100"  align="center" ><a class="LINKS_MENU" href="principal.php">
                                                         <div id="reg4">Clipping</div>
                                                     </a></td><td width="4" class="LINKS_MENU">|</td>
-                                                <td width="100"   align="center" ><a class="LINKS_MENU"  href="contact_p.php<?php echo "?cl=$tema"; ?>">
+                                                <td width="100"   align="center" ><a class="LINKS_MENU"  href="/index.php?#contact">
                                                         <div id="reg4">Contacto</div>
                                                     </a></td><td width="4" class="LINKS_MENU">|</td>
 
