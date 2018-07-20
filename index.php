@@ -1,7 +1,4 @@
 <?php
-header("Location: site/");exit;
-
-header("Content-Type: text/html; charset=UTF-8");
 $msg = "";
 if ($_GET['msg'] != "") {
     switch ($_GET['msg']) {
@@ -58,6 +55,10 @@ if ($_GET['logout'] == "yes") {
     setcookie("iadmin", "", 0, "/");
     header("Location: index.php?ok");
 }
+
+header("Location: site/");exit;
+
+header("Content-Type: text/html; charset=UTF-8");
 
 $mostrar = "";
 

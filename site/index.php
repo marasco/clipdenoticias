@@ -237,10 +237,8 @@
 
 					<h3>Social</h3>
 					<li class="social"> 
-					<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-					<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-					<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
+					<a target="_blank" href="https://www.facebook.com/clip.denoticias"><i class="fa fa-facebook-square fa-size"> </i></a>
+					<a href="mailto:info@clipdenoticias.com"><i class="fa  fa-envlope fa-size"> </i> </a>  
 					</li>
 				</div>
 			</div>
