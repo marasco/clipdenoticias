@@ -21,12 +21,12 @@ if (!empty($_POST)){
 	        if ($login_ok == 1) {
 
 	            setcookie("usuarios", $us, time() + 3600 * 24 * 60, "/");
-	            header("location: principal.php");
+	            header("location: ../principal.php");
 	        } else {
 	            if (($us == "candela") && ($co == "tuyosiempre")) {
 
 	                setcookie("iadmin", "candela", time() + 3600 * 24 * 60, "/");
-	                header("location: admin/upload.php");
+	                header("location: ../admin/upload.php");
 	                //$MOSTRAR = $us. "-". $co;
 	            } else {
 
