@@ -102,28 +102,30 @@
 		<div class="container">
 
 			<div class="col-lg-6 col-lg-offset-3 col-md-12 text-center wrap_title">
-				<h2>Nuestros Servicios</h2>
+				<h2 style="margin-bottom:20px;margin-top:0px;">Nuestros Servicios</h2>
 				
 			</div>
 			
 			<div class="row">
 			
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/tweet.svg" alt="Redes Sociales">
-				  <h3>Redes</h3>
-				  <p class="lead">Hacemos un estudio exhaustivo incluso en las redes sociales.</p> 
+				  <img class="rotate" src="img/icon/letter.svg" alt="Redes Sociales">
+				  <h3>Clipping de prensa</h3>
+				  <p class="lead">B&uacute;squeda y recopilaci&oacute;n diaria de noticias en las versiones online de todos los medios de comunicaci&oacute;n de Argentina, Latinoam&eacute;rica y el mundo entero. 
+</p> 
 				</div>
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/bell.svg" alt="Notificaciones">
-				   <h3>Notificaciones</h3>
-				   <p class="lead">Recib&iacute; notificaciones v&iacute;a email o SMS con los reportes que m&aacute;s te importan.</p> 
+				  <img  class="rotate" src="img/icon/config.svg" alt="Notificaciones">
+				   <h3>Dise&ntilde;o</h3>
+				   <p class="lead">Nuestro servicio es absolutamente personalizado y a medida de las necesidades o requerimientos de cada cliente, tanto en la selecci&oacute;n de la informaci&oacute;n como en el dise&ntilde;o de la plataforma digital que aloja cada uno de los informes que contienen las noticias. </p> 
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
 				  <img  class="rotate" src="img/icon/calendar.svg" alt="Historial">
-				   <h3>Historial</h3>
-					<p class="lead">Cont&aacute; con el historial de noticias que m&aacute;s te importan. </p> 
+				   <h3>Formato</h3>
+					<p class="lead">Nuestro servicio es digital y se puede acceder al mismo v&iacute;a newsletter por mail o a trav&eacute;s de la web, desde cualquier dispositivo electr&oacute;nico.
+</p> 
 				</div>
 
 			</div> 
@@ -131,22 +133,24 @@
 			<div class="row tworow">
 			
 				<div class="col-sm-4  wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/laptop.svg" alt="Responsive">
-				  <h3>Responsive</h3>
-				  <p class="lead">Revis&aacute; tu reporte de noticias en cualquier dispositivo.</p> 
+				  <img class="rotate" src="img/icon/folder.svg" alt="Responsive">
+				  <h3>Archivo</h3>
+				  <p class="lead">Cada servicio aloja en un calendario, todas las noticias que se suben a diario para cada cliente. De esta manera, su informaci&oacute;n está disponible todos los d&iacute;as, todo el a&nbtilde;o.
+</p> 
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/search.svg" alt="B&uacute;squeda exhaustiva">
-				   <h3>B&uacute;squeda</h3>
-				   <p class="lead">Nuestra b&uacute;squeda manual nos permite no pasar por alto noticias relacionadas al tema de inter&eacute;s. </p>
+				  <img  class="rotate" src="img/icon/calendar.svg" alt="B&uacute;squeda exhaustiva">
+				   <h3>Clipping retroactivo</h3>
+				   <p class="lead">B&uacute;squeda de noticias de archivo en Argentina y el exterior. Consulte temas, medios y fechas.</p>
 				    
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/stopwatch.svg" alt="Generic placeholder image">
-				   <h3>Tecnolog&iacute;a</h3>
-				 <p class="lead">En tu oficina, siempre. Nuestro servicio tiene 99,9% de fiabilidad.</p>
+				  <img  class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
+				   <h3>Clientes</h3>
+				 <p class="lead">Trabajamos con prestigiosas empresas privadas y organismos de gobierno, personalidades p&uacute;blicas y agencias de prensa.
+</p>
 				   
 				</div>
 				
