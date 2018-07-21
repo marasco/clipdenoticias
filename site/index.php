@@ -163,17 +163,17 @@
 		<div class="container">
 			<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
-				<h2>Ped&iacute; una DEMO gratuita</h2>
-				<p class="lead" style="margin-top:0">Conoc&eacute; c&oacute;mo funciona nuestro servicio de forma gratuita.</p>
+				<h2>Solicite una DEMO sin cargo</h2>
+				<p class="lead" style="margin-top:0">Conozca cómo funciona nuestro servicio de forma gratuita.</p>
 			 </div>
 			<div class="col-md-6 col-md-offset-3 text-center">
 				<div class="mockup-content">
 						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-							<button type="button "><span>Solicitar una DEMO</span></button>
+							<button type="button "><span>Solicite una DEMO sin cargo</span></button>
 							<div class="morph-content">
 								<div>
 									<div class="content-style-form content-style-form-4 ">
-										<h2 class="morph-clone">Solicitar una DEMO</h2>
+										<h2 class="morph-clone">Solicitud DEMO</h2>
 										<form>
 											<p><label>Tu cuenta de email</label><input id="request_demo_input" type="text" placeholder="Email" /></p>
 											<p><button type="button" id="request_demo">Enviar!</button></p>
@@ -195,8 +195,9 @@
 			<div class="row">
 			
 			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Contactanos</h2>
-				<p class="lead" style="margin-top:0">Solicit&aacute; una DEMO o hacenos las preguntas que quieras!</p>
+				<h2>C&oacute;mo Contactarnos?</h2>
+				<p class="lead" style="margin-top:0">Escr&iacute;banos a cmarasco@clipdenoticias.com (Candelaria Marasco Quiroga, Directora de Clip de Noticias) o telef&oacute;nicamente al +54 911 5825 3363
+</p>
 			</div>
 			
 			<form role="form" action="" method="post" >
