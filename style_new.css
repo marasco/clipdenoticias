@@ -67,7 +67,9 @@
 
 .TABLA_GRIS{ 
 	border: 1px solid ;
-	border-color: #cccccc;
+	border-color: #f1f1f1;
+	border-top:none;
+	border-bottom:none;
 }
 .LINEAS_GRISES { width:90%; color: #CCCCCC; size:1px;}
 

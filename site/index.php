@@ -7,8 +7,9 @@
 <!--[if gt IE 9]><!--> <html> <!--<![endif]-->
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
-    <meta name="author" content="">
+    <meta name="description" content="Clipping de Prensa . Monitoreo de Medios de Argentina y el mundo.">
+    <meta name="author" content="Candelaria Marasco">
+    <meta name="keywords" content="clipping, CLIPPING,CLIPPIN,CLIPPING,clip, noticias, clip de noticias, información, informacion, notas, recortes, informes,CLIPPING, empresas, clientes, candelaria, marasco, ituzaingo, servicio, informativo,CLIPPING, clipdenoticias, nacional, internacional, empresarial,CLIPPING,CLIPPING,CLIPPING,CLIPPING,CLIPPING">
     <meta charset="utf-8">
 
     <title>Clip de Noticias</title>
@@ -122,7 +123,7 @@
 				</div> 
 				
 				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/calendar.svg" alt="Historial">
+				  <img  class="rotate" src="img/icon/browser.svg" alt="Historial">
 				   <h3>Formato</h3>
 					<p class="lead">Nuestro servicio es digital y se puede acceder al mismo v&iacute;a newsletter por mail o a trav&eacute;s de la web, desde cualquier dispositivo electr&oacute;nico.
 </p> 
@@ -135,7 +136,7 @@
 				<div class="col-sm-4  wow fadeInDown text-center">
 				  <img class="rotate" src="img/icon/folder.svg" alt="Responsive">
 				  <h3>Archivo</h3>
-				  <p class="lead">Cada servicio aloja en un calendario, todas las noticias que se suben a diario para cada cliente. De esta manera, su informaci&oacute;n está disponible todos los d&iacute;as, todo el a&nbtilde;o.
+				  <p class="lead">Cada servicio aloja en un calendario, todas las noticias que se suben a diario para cada cliente. De esta manera, su informaci&oacute;n est&aacute; disponible todos los d&iacute;as, todo el a&ntilde;o.
 </p> 
 				</div> 
 				
@@ -164,7 +165,7 @@
 			<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-12 text-center white">
 				<h2>Solicite una DEMO sin cargo</h2>
-				<p class="lead" style="margin-top:0">Conozca cómo funciona nuestro servicio de forma gratuita.</p>
+				<p class="lead" style="margin-top:0">Conozca c&oacute;mo funciona nuestro servicio de forma gratuita.</p>
 			 </div>
 			<div class="col-md-6 col-md-offset-3 text-center">
 				<div class="mockup-content">
