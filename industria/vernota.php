@@ -1,5 +1,8 @@
-<?php function texto($a)
-{
+<?php 
+@require_once '../env.php';
+
+
+function texto($a) {
 $a = str_replace("<","&lt;",$a);
 $a = str_replace(">","&gt;",$a);
 $a = str_replace("'","&quot;",$a);

@@ -1,4 +1,7 @@
 <?php
+
+@require_once 'env.php';
+
 $msg = "";
 if ($_GET['msg'] != "") {
     switch ($_GET['msg']) {

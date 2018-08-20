@@ -1,5 +1,7 @@
-
 <?php
+
+@require_once '../env.php';
+
 $lista_meses = array(
     0 => "Enero",
     1 => "Febrero",

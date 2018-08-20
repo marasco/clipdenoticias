@@ -1,4 +1,5 @@
 <?php 
+@require_once '../env.php';
 
 $MOSTRAR='';
 if (!empty($_POST)){

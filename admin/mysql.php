@@ -1,4 +1,6 @@
 <?php
+@require_once '../env.php';
+
 function texto($a)
 {
 $a = str_replace("<","&lt;",$a);
